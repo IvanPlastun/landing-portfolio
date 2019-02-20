@@ -1,0 +1,141 @@
+.header {
+    height: 100vh;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-shadow {
+    background-color: rgba(15, 23, 31, 0.75);
+    height: 100%;
+}
+
+.menu-position {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 67px;
+}
+
+.icon-menu {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 31px;
+
+
+    &__line {
+        position: absolute;
+        display: block;
+        width: 40%;
+        margin: 30%;
+        height: 2px;
+        border-radius: 3px;
+        background-color: #2f3032;
+    }
+
+    &_line-top {
+        top: 5px;
+    }
+
+    &_line-middle {
+        top: 10px;
+    }
+
+    &_line-bottom {
+        top: 15px;
+    }
+}
+
+.icon-menu:hover {
+    transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -ms-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.header-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-block {
+    width: 345px;
+    height: 340px;
+    border-radius: 50%;
+    border: 12px solid rgba(255, 255, 255, 0.13);
+    margin-bottom: 38px;
+    overflow: hidden;
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.name {
+    font-family: Taiga;
+    color:  rgba(255, 255, 255, 1);
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+
+    &_margin {
+        margin-bottom: 30px;
+    }
+}
+
+.text-preview  {
+    font-family: Raleway;
+    color:  #1e98ad;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21.12px;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &__button {
+        display: inline-block;
+        width: 150px;
+        height: 51px;
+        border: 2px solid #bebebe;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.05);
+        font-family: Raleway;
+        color: #ecf0f1;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 51px;
+        text-align: center;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    &__button:last-child {
+        margin-right: 0px;
+    }
+
+    &__button:hover {
+        background-color: #cccccc;
+        color: #4d4d4d;
+        transition: color, background-color 1s ease;
+        -webkit-transition: background-color 1s ease;
+        -moz-transition: background-color 1s ease;
+        -ms-transition: background-color 1s ease;
+        -o-transition: background-color 1s ease;
+    }
+}

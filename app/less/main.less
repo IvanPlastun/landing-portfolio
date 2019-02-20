@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Taiga";
+    src: url(../fonts/Taiga.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    width: 1080px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+}
+
+.heading-type-h2 {
+    font-family: Raleway;
+    color:  #595959;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 21.12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-type-h2::after {
+    display: block;
+    content: "";
+    width: 116px;
+    height: 8px;
+    background-color: #88ccd8;
+    margin: 20px auto 0 auto;;
+}
+
+@import "blocks/header/header.less";
+@import "blocks/aboutMe/aboutMe.less";
+@import "blocks/services/services.less";
+@import "blocks/portfolio/portfolio.less";
+@import "blocks/blog/blog.less";
+@import "blocks/statusWorkPerfomed/statusWorkPerfomed.less";
+@import "blocks/footer/footer.less";
+@import "adaptivity/mobile.less";
+@import "adaptivity/tablet.less";
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .about-me__info__desctiption {
+        width: 510px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 1099px) { 
+        .container {
+            width: 980px;
+            box-sizing: border-box;
+        }
+
+        .work-block {
+            width: 215px;
+        }
+
+        .blog-entries {
+            justify-content: space-around;
+        }
+
+        .blog-entry:nth-child(4) {
+            margin-top: -60px;
+        }
+
+        .blog-entry:nth-child(5) {
+            margin-top: 0;
+        }
+
+        .blog-entry:nth-child(6) {
+            margin-top: -120px;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        .container {
+            box-sizing: border-box;
+        }
+
+        .work-block {
+            width: 240px;
+        }
+    }
+}
